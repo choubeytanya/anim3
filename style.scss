@@ -1,0 +1,117 @@
+body{
+    display:flex;
+    margin:20% 0;
+    justify-content:space-around;
+}
+.card{
+    height:250px;
+    width:200px;
+    text-align: center;
+    box-shadow: -2px 2px 20px 2px rgb(50, 49, 49);
+    padding:10px;
+    overflow: hidden;
+}
+.number{
+    width:50px;
+    height:50px;
+    margin:10px auto;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color:white;
+    font-weight: bold;
+}
+
+.first{
+    background-color: red;
+    transition: 2s;
+}
+.second{
+    background-color:green;
+    transition: 2s;
+}
+.third{
+    background-color:blue;
+    transition: 2s;
+}
+.more{
+    text-decoration: none;
+    font-weight:bold;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    padding:10px;
+    background-color: white;
+}
+
+.card:hover{
+    color:white;
+    // .first, .second, .third{
+        // animation-duration: 2s;
+        // animation-timing-function: ease-out;
+        // animation-fill-mode:forwards;
+    // }
+    .first{
+        // animation-name: animate-first;
+        color:black;
+        background-color: white;
+        box-shadow: 0px 0px 0px 200px red;
+        transform: rotatez(360deg);
+    }
+    .second{
+        // animation-name: animate-second;
+        color:black;
+        background-color: white;
+        box-shadow: 0px 0px 0px 200px green;
+        transform: rotateY(360deg);
+    }
+    .third{
+        // animation-name: animate-third;
+        color:black;
+        background-color: white;
+        box-shadow: 0px 0px 0px 200px blue;
+        transform: rotateX(360deg);
+    }
+}
+.content{
+    position:relative;
+    z-index:1;
+}
+
+// @keyframes animate-first{
+//     0%{
+//         color:white;
+//         background-color: red;
+//         box-shadow: 0px 0px 0px 0px red;
+//     }
+//     100%{
+//         color:black;
+//         background-color: white;
+//         box-shadow: 0px 0px 0px 200px red;
+//     }
+// }
+
+// @keyframes animate-second{
+//     0%{
+//         color:white;
+//         background-color: green;
+//         box-shadow: 0px 0px 0px 0px green;
+//     }
+//     100%{
+//         color:black;
+//         background-color: white;
+//         box-shadow: 0px 0px 0px 200px green;
+//     }
+// }
+
+// @keyframes animate-third{
+//     0%{
+//         color:white;
+//         background-color: blue;
+//         box-shadow: 0px 0px 0px 0px blue;
+//     }
+//     100%{
+//         color:black;
+//         background-color: white;
+//         box-shadow: 0px 0px 0px 200px blue;
+//     }
+// }
